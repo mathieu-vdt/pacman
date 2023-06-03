@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+}
+#map {
+    display: grid;
+    margin: auto;
+    width: fit-content;
+}
+
+.move-right {
+    animation: move-right-animation 0.2s;
+  }
+  
+  @keyframes move-right-animation {
+    from {
+      transform: translateX(-25px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.wall,
+.empty,
+.point,
+.pacman ,
+.ghost{
+    background-repeat: none!important;
+    background-size: cover!important;
+    background-color: black!important;
+}
+
+.wall {
+    background: url('/includes/images/mur.gif');
+
+    /*border: solid 1px rgb(23, 146, 228);*/
+    background-size: cover;
+}
+
+.empty {
+    background: url('/includes/images/sol.gif');
+    background-size: cover;
+}
+
+.point {
+    background: url('/includes/images/bonbon.gif');
+    transform: scale(0.5);
+    background-size: cover;
+}
+
+.bonbon {
+    background: url('/includes/images/bonbon.gif');
+    background-size: cover;
+}
+
+.pacman {
+    background: url('/includes/images/pacman5.gif');
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.ghost1{
+    background: url('/includes/images/fantome1.gif');
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.ghost2{
+    background: url('/includes/images/fantome2.gif');
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.ghost3{
+    background: url('/includes/images/fantome3.gif');
+    background-size: cover;
+    transform: rotate(0deg);
+}
+
+.ghost4{
+    background: url('/includes/images/fantome3.gif');
+    background-size: cover;
+    filter: hue-rotate(99deg);
+    transform: rotate(0deg) ;
+}
+
+.score{
+    color: aliceblue;
+}
