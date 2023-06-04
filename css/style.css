@@ -7,6 +7,7 @@ body{
     width: fit-content;
 }
 
+
 .wall,
 .empty,
 .point,
@@ -18,60 +19,62 @@ body{
 }
 
 .wall {
-    background: url('/includes/images/mur.gif');
+    background: url('../includes/images/mur.gif');
 
     /*border: solid 1px rgb(23, 146, 228);*/
     background-size: cover;
 }
 
 .empty {
-    background: url('/includes/images/sol.gif');
+    background: url('../includes/images/sol.gif');
     background-size: cover;
 }
 
 .point {
-    background: url('/includes/images/bonbon.gif');
+    background: url('../includes/images/bonbon.gif');
     transform: scale(0.5);
     background-size: cover;
 }
 
 .bonbon {
-    background: url('/includes/images/bonbon.gif');
+    background: url('../includes/images/bonbon.gif');
     background-size: cover;
     transition: transform 0.2s linear;
 }
 
 .pacman {
-    background: url('/includes/images/pacman5.gif');
+    background: url('../includes/images/pacman5.gif');
     background-size: cover;
     transform: rotate(0deg);
 }
 
 .ghost1{
-    background: url('/includes/images/fantome1.gif');
+    background: url('../includes/images/fantome1.gif');
     background-size: cover;
+    filter: hue-rotate(150deg);
     transform: rotate(0deg);
     transition: transform 0.2s linear;
 }
 
 .ghost2{
-    background: url('/includes/images/fantome2.gif');
+    background: url('../includes/images/fantome1.gif');
     background-size: cover;
+    filter: hue-rotate(100deg);
     transform: rotate(0deg);
     transition: transform 0.2s linear;
 }
 
 .ghost3{
-    background: url('/includes/images/fantome3.gif');
+    background: url('../includes/images/fantome1.gif');
     background-size: cover;
     transform: rotate(0deg);
     transition: transform 0.2s linear;
 }
 
 .ghost4{
-    background: url('/includes/images/fantome3.gif');
+    background: url('../includes/images/fantome1.gif');
     background-size: cover;
-    filter: hue-rotate(99deg);
+    filter: hue-rotate(317deg);
     transform: rotate(0deg) ;
     transition: transform 0.2s linear;
 }

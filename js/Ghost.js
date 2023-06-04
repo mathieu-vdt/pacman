@@ -63,10 +63,8 @@ class Ghost {
         
         findGhost.style.transform = 'scaleX(-1)'
 
-
       }else{
         this.direction = getRandomInt(4)
-        this.deplaceGhost()
       }
     }
   }
@@ -83,11 +81,10 @@ class Ghost {
           this.direction = 0;
           this.x++;
           
-          findGhost.style.transform = 'rotate(0deg)'
+          findGhost.style.transform = 'scaleX(1)'
 
         }else{
           this.direction = getRandomInt(4)
-          this.deplaceGhost()
         }
       }
   }
@@ -106,7 +103,6 @@ class Ghost {
             
         }else{
           this.direction = getRandomInt(4)
-          this.deplaceGhost()
         }
     }
   }
@@ -125,7 +121,6 @@ class Ghost {
   
       }else{
         this.direction = getRandomInt(4)
-        this.deplaceGhost()
       }
     }
   }
