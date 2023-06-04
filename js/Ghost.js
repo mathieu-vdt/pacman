@@ -61,11 +61,17 @@ class Ghost {
         this.direction = 2;
         this.x--;
         
-        findGhost.style.transform = 'scaleX(-1)'
-        targetCell.className = 'empty'
+        setTimeout(() => {
+          findGhost.style.transform = 'translateX(-100%)';
+        }, 0);
+
 
       }else{
+        setTimeout(() => {
+          findGhost.style.transform = ' ';
+        }, 0);
         this.direction = getRandomInt(4)
+        this.deplaceGhost()
       }
     }
   }
@@ -82,10 +88,15 @@ class Ghost {
           this.direction = 0;
           this.x++;
           
-          findGhost.style.transform = 'rotate(0deg)'
+          // findGhost.style.transform = 'rotate(0deg)'
+
+          setTimeout(() => {
+            findGhost.style.transform = 'translateX(100%)';
+          }, 0);
 
         }else{
           this.direction = getRandomInt(4)
+          this.deplaceGhost()
         }
       }
   }
@@ -101,9 +112,11 @@ class Ghost {
           findGhost.style.gridRow = `${newY} / ${newY + 1}`;
           this.direction = 3;
           this.y--;
+          
             
         }else{
           this.direction = getRandomInt(4)
+          this.deplaceGhost()
         }
     }
   }
@@ -122,6 +135,7 @@ class Ghost {
   
       }else{
         this.direction = getRandomInt(4)
+        this.deplaceGhost()
       }
     }
   }

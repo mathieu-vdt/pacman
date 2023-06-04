@@ -7,19 +7,6 @@ body{
     width: fit-content;
 }
 
-.move-right {
-    animation: move-right-animation 0.2s;
-  }
-  
-  @keyframes move-right-animation {
-    from {
-      transform: translateX(-25px);
-    }
-    to {
-      transform: translateX(0);
-    }
-  }
-
 .wall,
 .empty,
 .point,
@@ -51,6 +38,7 @@ body{
 .bonbon {
     background: url('/includes/images/bonbon.gif');
     background-size: cover;
+    transition: transform 0.2s linear;
 }
 
 .pacman {
@@ -63,18 +51,21 @@ body{
     background: url('/includes/images/fantome1.gif');
     background-size: cover;
     transform: rotate(0deg);
+    transition: transform 0.2s linear;
 }
 
 .ghost2{
     background: url('/includes/images/fantome2.gif');
     background-size: cover;
     transform: rotate(0deg);
+    transition: transform 0.2s linear;
 }
 
 .ghost3{
     background: url('/includes/images/fantome3.gif');
     background-size: cover;
     transform: rotate(0deg);
+    transition: transform 0.2s linear;
 }
 
 .ghost4{
@@ -82,6 +73,7 @@ body{
     background-size: cover;
     filter: hue-rotate(99deg);
     transform: rotate(0deg) ;
+    transition: transform 0.2s linear;
 }
 
 .score{

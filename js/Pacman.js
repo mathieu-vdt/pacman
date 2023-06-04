@@ -73,13 +73,10 @@ class Pacman {
               this.x++
               
               mapTable[this.y - 1][this.x - 1] = 1
-              
               findPacman.style.transform = 'rotate(0deg)'
               targetCell.className = 'empty'
-              
             }
           }
-          
       }
       
       moveUp(){
