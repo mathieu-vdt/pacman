@@ -78,4 +78,13 @@ body{
 
 .score{
     color: aliceblue;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    width: 150px; 
+    margin: auto; 
+    padding: 30px;
+    border: solid 1px #3cb2d9;
+    border-radius: 8px;
 }

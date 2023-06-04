@@ -7,7 +7,6 @@ const meanings = {
 /* Map */
 let mapModel = new Map()
 let mapTable = mapModel.map
-const mapTableTmp = mapModel.map
 
 /* Pacman */
 let pacman = new Pacman();
@@ -40,7 +39,7 @@ function totalPoints(){
 }
 
 function isWon(){
-  if(countPoints() === totalPoint){
+  if(countPoints() === 30){
     return true;
   }else{
     return false;
@@ -113,11 +112,6 @@ function tourDeJeux(){
   let win = isWon();
   map.innerHTML = ''
 
-  let loose = isLoose();
-  if(loose === true){
-    alert('Perdu !')
-    relaunch()
-  }
   mapModel.createTable(map);
   pacman.affichePacman(map);
   afficheGhosts();
@@ -133,12 +127,19 @@ function tourDeJeux(){
     alert('Gagné !')
     relaunch()
   }
+
+  let loose = isLoose();
+  if(loose === true){
+    alert('Perdu !')
+    relaunch()
+  }
   
 
 }
 
 function relaunch(){
   /* Map */
+  mapModel = new Map()
   mapTable = mapModel.map
 
   /* Pacman */
@@ -153,6 +154,7 @@ function relaunch(){
   ]
 
   tourDeJeux()
+
 }
 
 setInterval(tourDeJeux, 200)
