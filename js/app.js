@@ -39,7 +39,7 @@ function totalPoints(){
 }
 
 function isWon(){
-  if(countPoints() === 30){
+  if(countPoints() === totalPoint){
     return true;
   }else{
     return false;
